@@ -3,7 +3,7 @@
             "character": "あ",
             "romaji": "A"
           }, {
-            "syllabary": "い",
+            "syllabary": "H",
             "character": "え",
             "romaji": "I"
           }, {
@@ -228,11 +228,11 @@
             "romaji": "DA"
           }, {
             "syllabary": "H",
-            "character": "",
-            "romaji": ""
+            "character": "*",
+            "romaji": "*"
           }, {
             "syllabary": "H",
-            "character": "",
+            "character": "*",
             "romaji": "TZU"
           }, {
             "syllabary": "H",
@@ -414,6 +414,178 @@
             "syllabary": "ぴょ",
             "character": "ぽ",
             "romaji": "PYO"
+          }, {
+            "syllabary": "K",
+            "character": "ア",
+            "romaji": "A"
+          }, {
+            "syllabary": "K",
+            "character": "イ",
+            "romaji": "I"
+          }, {
+            "syllabary": "K",
+            "character": "ウ",
+            "romaji": "U"
+          }, {
+            "syllabary": "K",
+            "character": "エ",
+            "romaji": "E"
+          }, {
+            "syllabary": "K",
+            "character": "オ",
+            "romaji": "O"
+          }, {
+            "syllabary": "K",
+            "character": "カ",
+            "romaji": "KA"
+          }, {
+            "syllabary": "K",
+            "character": "キ",
+            "romaji": "KI"
+          }, {
+            "syllabary": "K",
+            "character": "ク",
+            "romaji": "KU"
+          }, {
+            "syllabary": "K",
+            "character": "ケ",
+            "romaji": "KE"
+          }, {
+            "syllabary": "K",
+            "character": "コ",
+            "romaji": "KO"
+          }, {
+            "syllabary": "K",
+            "character": "サ",
+            "romaji": "SA"
+          }, {
+            "syllabary": "K",
+            "character": "シ",
+            "romaji": "SHI"
+          }, {
+            "syllabary": "K",
+            "character": "ス",
+            "romaji": "SU"
+          }, {
+            "syllabary": "K",
+            "character": "セ",
+            "romaji": "SE"
+          }, {
+            "syllabary": "K",
+            "character": "ソ",
+            "romaji": "SO"
+          }, {
+            "syllabary": "K",
+            "character": "タ",
+            "romaji": "TA"
+          }, {
+            "syllabary": "K",
+            "character": "チ",
+            "romaji": "CHI"
+          }, {
+            "syllabary": "K",
+            "character": "ツ",
+            "romaji": "TSU"
+          }, {
+            "syllabary": "K",
+            "character": "テ",
+            "romaji": "TE"
+          }, {
+            "syllabary": "K",
+            "character": "ト",
+            "romaji": "TO"
+          }, {
+            "syllabary": "K",
+            "character": "ナ",
+            "romaji": "NA"
+          }, {
+            "syllabary": "K",
+            "character": "ニ",
+            "romaji": "NI"
+          }, {
+            "syllabary": "K",
+            "character": "ヌ",
+            "romaji": "NU"
+          }, {
+            "syllabary": "K",
+            "character": "ネ",
+            "romaji": "NE"
+          }, {
+            "syllabary": "K",
+            "character": "ノ",
+            "romaji": "NO"
+          }, {
+            "syllabary": "K",
+            "character": "ハ",
+            "romaji": "HA"
+          }, {
+            "syllabary": "K",
+            "character": "ヒ",
+            "romaji": "HI"
+          }, {
+            "syllabary": "K",
+            "character": "フ",
+            "romaji": "FU"
+          }, {
+            "syllabary": "K",
+            "character": "ヘ",
+            "romaji": "HE"
+          }, {
+            "syllabary": "K",
+            "character": "ホ",
+            "romaji": "HO"
+          }, {
+            "syllabary": "K",
+            "character": "マ",
+            "romaji": "MA"
+          }, {
+            "syllabary": "K",
+            "character": "ミ",
+            "romaji": "MI"
+          }, {
+            "syllabary": "K",
+            "character": "ム",
+            "romaji": "MU"
+          }, {
+            "syllabary": "K",
+            "character": "メ",
+            "romaji": "ME"
+          }, {
+            "syllabary": "K",
+            "character": "モ",
+            "romaji": "MO"
+          }, {
+            "syllabary": "K",
+            "character": "ヤ",
+            "romaji": "YA"
+          }, {
+            "syllabary": "K",
+            "character": "ユ",
+            "romaji": "YU"
+          }, {
+            "syllabary": "K",
+            "character": "ヨ",
+            "romaji": "YO"
+          }, {
+            "syllabary": "K",
+            "character": "ラ",
+            "romaji": "RA"
+          }, {
+            "syllabary": "K",
+            "character": "リ",
+            "romaji": "RI"
+          }, {
+            "syllabary": "K",
+            "character": "ル",
+            "romaji": "RU"
+          }, {
+            "syllabary": "K",
+            "character": "レ",
+            "romaji": "RE"
+          }, {
+            "syllabary": "K",
+            "character": "ロ",
+            "romaji": "RO"
           }
       ]
 }
