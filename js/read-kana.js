@@ -12,7 +12,7 @@ $.getJSON('data/kana.json', function(data){
 });
 
 $('#settingsModal').find('input[type="checkbox"]').click(function(){
-    isChecked = $(this).prop('checked');
+    var isChecked = $(this).prop('checked');
     if($(this).attr('id').indexOf("all") >= 0){
         $(this).closest('div[class="row"]').find('input[type="checkbox"]').prop('checked', isChecked);
     } else {
@@ -31,11 +31,20 @@ $('#settingsModal').find('input[type="checkbox"]').click(function(){
 });
 
 $('#settingsModal').find('button[name="apply"]').click(function(){
-    myKana = [];
+    myKanas = [];
     var $radios = $('#settingsModal').find('input[type="radio"]');
     currentSyllabary = $radios.eq(0).prop('checked') ? 'HIRAGANA' : 'KATAKANA';
 
     $('#settingsModal').modal('hide');
+});
+
+$('#checkButton').click(function(){
+    var value = $('#checkInputText').val();
+    if(currentKana.romaji == value.toUpperCase()){
+        alert('Correct answer!');
+    } else {
+        alert('Incorrect answer!');
+    }
 });
 
 $(document).ready(function(){
