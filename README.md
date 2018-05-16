@@ -15,7 +15,7 @@ Minimalist page to practice Japanese syllabaries, Hiragana and Katakana.
 
 * [JavaScript](https://www.javascript.com/) - The programming language.
 * [Bootstrap](https://getbootstrap.com/) - The framework used.
-* [JQuery](https://jquery.com/) - The framework used.
+* [JQuery](https://jquery.com/) - The JavaScript library used.
 
 ## Versioning
 
@@ -27,4 +27,4 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 
 ## License
 
-This project is licensed under the **GNU General Public License v3.0** - see the  [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the **GNU General Public License v3.0** - see the  [LICENSE](LICENSE) file for details.
