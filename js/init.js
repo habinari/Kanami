@@ -16,9 +16,7 @@ $(document).ready(function(){
     $checkInput = $('#checkInputText');
     $showButton = $('#showButton');
 
-    $(function () {
-        $('[data-toggle="popover"]').popover();
-    });
+    $('[data-toggle="popover"]').popover();
 
     $('#settingsModal').find('button[name="apply"]').click();
 

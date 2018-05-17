@@ -1,36 +1,29 @@
-$('#settingsModal').find('input[type="checkbox"]').click(function(){
-    var isChecked = $(this).prop('checked');
+$('#settingsModal input[type="checkbox"]').click(function(){
+    var isChecked = $(this).is(':checked');
     if($(this).attr('id').indexOf("all") >= 0){
         $(this).closest('div[class="row"]').find('input[type="checkbox"]').prop('checked', isChecked);
     } else {
-        var mustCheck;
-        if(!isChecked){
-            mustCheck = false;
-        } else {
-            mustCheck = true;
+        var mustCheck = isChecked;
+        if(isChecked) {
             $(this).closest('div[class="row"]').find('input[type="checkbox"]').each(function(){
-                if($(this).attr('id').indexOf("all") && !$(this).prop('checked'))
+                if($(this).attr('id').indexOf("all") && !$(this).is(':checked'))
                     mustCheck = false;
             });
         }
-        $(this).closest('div[class="row"]').find('input[type="checkbox"]').eq(0).prop('checked', mustCheck);
+        $(this).closest('div[class="row"]').find('input[type="checkbox"]').first().prop('checked', mustCheck);
     }
 });
 
-$('#settingsModal').find('input[type="radio"]').click(function(){
-    if($('#settingsModal').find('input[type="radio"]').eq(0).prop('checked')){
-        $('div[name="hiraganas"]').show();
-    } else {
-        $('div[name="hiraganas"]').hide();
-    }
+$('#settingsModal input[type="radio"]').click(function(){
+    $('div[name="hiraganas"]').toggle( $('#settingsModal input[type="radio"]').first().is(':checked') );
 });
 
-$('#settingsModal').find('button[name="apply"]').click(function(){
+$('#settingsModal button[name="apply"]').click(function(){
     $modal = $('#settingsModal');
-    var $radios = $('#settingsModal').find('input[type="radio"]');
+    var $radios = $modal.find('input[type="radio"]');
     currentSyllabary = $radios.eq(0).prop('checked') ? 'HIRAGANA' : 'KATAKANA';
 
-    $('#settingsModal').modal('hide');
+    $modal.modal('hide');
 
     var $kanaChecks;
     if(currentSyllabary == 'HIRAGANA'){
@@ -45,7 +38,7 @@ $('#settingsModal').find('button[name="apply"]').click(function(){
 function filterKanas($kanaChecks){
     myKanas = [];
     $kanaChecks.find('input').each(function(){
-        if(!$(this).attr('id').includes('all') && $(this).prop('checked')){
+        if(!$(this).attr('id').includes('all') && $(this).is(':checked')){
             addKana($(this).val().substring(2), $(this).val().substring(0, 1));
         }
     });
