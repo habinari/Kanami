@@ -6,7 +6,7 @@ $('#settingsModal input[type="checkbox"]').click(function(){
         var mustCheck = isChecked;
         if(isChecked) {
             $(this).closest('div[class="row"]').find('input[type="checkbox"]').each(function(){
-                if($(this).attr('id').indexOf("all") && !$(this).is(':checked'))
+                if($(this).attr('id').includes('all') && !$(this).is(':checked'))
                     mustCheck = false;
             });
         }
@@ -15,39 +15,33 @@ $('#settingsModal input[type="checkbox"]').click(function(){
 });
 
 $('#settingsModal input[type="radio"]').click(function(){
-    $('div[name="hiraganas"]').toggle( $('#settingsModal input[type="radio"]').first().is(':checked') );
+    var isHiragana = $('#settingsModal input[type="radio"]').first().is(':checked');
+    $('div[name="hiraganas"]').toggle( isHiragana );
+    $('div[name="hiraganas"]').toggle( ! isHiragana );
 });
 
 $('#settingsModal button[name="apply"]').click(function(){
     $modal = $('#settingsModal');
     var $radios = $modal.find('input[type="radio"]');
-    currentSyllabary = $radios.eq(0).prop('checked') ? 'HIRAGANA' : 'KATAKANA';
+    currentSyllabary = $radios.first().is(':checked') ? 'HIRAGANA' : 'KATAKANA';
 
     $modal.modal('hide');
 
     var $kanaChecks;
-    if(currentSyllabary == 'HIRAGANA'){
-        $kanaChecks = $modal.find('div[name = "hiraganas"]');
-    } else {
-        //TODO: completar con el silabario katakana, tambien requiere incluirlos en el html
-    }
+    $kanaChecks = $modal.find('div[name = "' + ((currentSyllabary == 'HIRAGANA') ? "hiraganas" : 'katakanas') +'"]');
 
-    filterKanas($kanaChecks);
-});
-
-function filterKanas($kanaChecks){
     myKanas = [];
     $kanaChecks.find('input').each(function(){
         if(!$(this).attr('id').includes('all') && $(this).is(':checked')){
             addKana($(this).val().substring(2), $(this).val().substring(0, 1));
         }
     });
-}
 
-function addKana(romaji, syllabary){
-    for(var i = 0; i < kanas.length; i++){
-        if(kanas[i].romaji == romaji && kanas[i].syllabary == syllabary){
-            myKanas.push(kanas[i]);
+    function addKana(romaji, syllabary){
+        for(var i = 0; i < kanas.length; i++){
+            if(kanas[i].romaji == romaji && kanas[i].syllabary == syllabary){
+                myKanas.push(kanas[i]);
+            }
         }
     }
-}
+});

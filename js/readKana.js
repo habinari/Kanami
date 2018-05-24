@@ -8,9 +8,16 @@ $('#checkButton').click(function(){
 });
 
 $('#nextButton').click(function(){
-    var rnd = Math.floor(Math.random() * myKanas.length);
-    currentKana = myKanas[rnd];
-    $kana.text(currentKana.character);
+    if(auxKanas.length == 0)
+        auxKanas = myKanas.slice();
+
+    var lastKana = currentKana;
+    while(lastKana == currentKana && myKanas.length > 1){
+        var rnd = Math.floor(Math.random() * auxKanas.length);
+        currentKana = auxKanas[rnd];
+        auxKanas.splice(rnd, 1);
+        $('#kana').text(currentKana.character);
+    }
 
     $showButton.attr('data-original-title', currentKana.romaji);
     $showButton.attr('data-content', 'Kana: ' + currentKana.character +

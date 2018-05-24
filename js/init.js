@@ -1,10 +1,10 @@
 var kanas = [];
 var myKanas = [];
+var auxKanas = [];
 
 var currentKana;
 var currentSyllabary = 'HIRAGANA';
 
-var $kana;
 var $showButton;
 
 $.getJSON('data/kana.json', function(data){
@@ -12,12 +12,9 @@ $.getJSON('data/kana.json', function(data){
 });
 
 $(document).ready(function(){
-    $kana = $('#kana');
-    $checkInput = $('#checkInputText');
     $showButton = $('#showButton');
 
     $('[data-toggle="popover"]').popover();
 
-    $('#settingsModal').find('button[name="apply"]').click();
-
+    $('#settingsModal button[name="apply"]').click();
 });
