@@ -37,6 +37,8 @@ $('#settingsModal button[name="apply"]').click(function(){
         }
     });
 
+    auxKanas = myKanas.splice();
+
     function addKana(romaji, syllabary){
         for(var i = 0; i < kanas.length; i++){
             if(kanas[i].romaji == romaji && kanas[i].syllabary == syllabary){
