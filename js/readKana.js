@@ -1,15 +1,21 @@
 $('#checkButton').click(function() {
     var value = $('#checkInputText').val();
     if(currentKana.romaji == value.toUpperCase()) {
-        alert('Correct answer!');
+        $('#checkInputText').addClass('is-valid');
+        $('#checkInputText').removeClass('is-invalid');
     } else {
-        alert('Incorrect answer!');
+        $('#checkInputText').addClass('is-invalid');
+        $('#checkInputText').removeClass('is-valid');
     }
 });
 
 $('#nextButton').click(function() {
     if(auxKanas.length == 0)
         auxKanas = myKanas.slice();
+
+    $('#checkInputText').removeClass('is-invalid');
+    $('#checkInputText').removeClass('is-valid');
+    $('#checkInputText').val('');
 
     var lastKana = currentKana;
     while(lastKana == currentKana && myKanas.length > 1) {
@@ -18,8 +24,6 @@ $('#nextButton').click(function() {
         auxKanas.splice(rnd, 1);
         $('#kana').text(currentKana.character);
     }
-
-    $('#checkInputText').val('');
 
     $showButton.attr('data-original-title', currentKana.romaji);
     $showButton.attr('data-content', 'Kana: ' + currentKana.character +
