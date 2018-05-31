@@ -9,9 +9,7 @@ var $showButton;
 
 $.getJSON('data/kana.json', function(data){
     kanas = data.kanas;
-});
 
-$(document).ready(function(){
     $showButton = $('#showButton');
 
     $('[data-toggle="popover"]').popover();
