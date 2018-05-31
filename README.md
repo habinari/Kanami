@@ -7,7 +7,7 @@ Minimalist page to practice Japanese syllabaries, Hiragana and Katakana.
 
 ## Getting Started
 
-* Go to [kabi404.github.io/Nogitsune-Kana](https://kabi404.github.io/Nogitsune-Kana)
+* Go to [http://www.kabi404.me/Nogitsune-Kana](http://www.kabi404.me/Nogitsune-Kana)
 * Press **"NEXT"** button to see the next kana.
 * Press **"SHOW"** button to see the information of current kana.
 
