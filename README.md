@@ -1,13 +1,13 @@
-# Nogitsune Kana
+# Light Kana
 [![License](https://img.shields.io/badge/License-GPL--3.0-orange.svg)](https://github.com/kabi404/nogitsune-kana/blob/master/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-[![CodeFactor](https://www.codefactor.io/repository/github/kabi404/nogitsune-kana/badge)](https://www.codefactor.io/repository/github/kabi404/nogitsune-kana)
+[![CodeFactor](https://www.codefactor.io/repository/github/kabi404/light-kana/badge)](https://www.codefactor.io/repository/github/kabi404/light-kana)
 
 Minimalist page to practice Japanese syllabaries, Hiragana and Katakana.
 
 ## Getting Started
 
-* Go to [http://www.kabi404.me/Nogitsune-Kana](http://www.kabi404.me/Nogitsune-Kana)
+* Go to [http://www.kabi404.me/light-kana](http://www.kabi404.me/light-Kana)
 * Press **"NEXT"** button to see the next kana.
 * Press **"SHOW"** button to see the information of current kana.
 
