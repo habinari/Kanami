@@ -1,591 +1,738 @@
 {"kanas": [{
             "syllabary": "H",
             "character": "あ",
-            "romaji": "A"
+            "romaji": "A",
+            "row": 0
           }, {
             "syllabary": "H",
             "character": "い",
-            "romaji": "I"
+            "romaji": "I",
+            "row": 0
           }, {
             "syllabary": "H",
             "character": "う",
-            "romaji": "U"
+            "romaji": "U",
+            "row": 0
           }, {
             "syllabary": "H",
             "character": "え",
-            "romaji": "E"
+            "romaji": "E",
+            "row": 0
           }, {
             "syllabary": "H",
             "character": "お",
-            "romaji": "O"
+            "romaji": "O",
+            "row": 0
           }, {
             "syllabary": "H",
             "character": "か",
-            "romaji": "KA"
+            "romaji": "KA",
+            "row": 1
           }, {
             "syllabary": "H",
             "character": "き",
-            "romaji": "KI"
+            "romaji": "KI",
+            "row": 1
           }, {
             "syllabary": "H",
             "character": "く",
-            "romaji": "KU"
+            "romaji": "KU",
+            "row": 1
           }, {
             "syllabary": "H",
             "character": "け",
-            "romaji": "KE"
+            "romaji": "KE",
+            "row": 1
           }, {
             "syllabary": "H",
             "character": "こ",
-            "romaji": "KO"
+            "romaji": "KO",
+            "row": 1
           }, {
             "syllabary": "H",
             "character": "さ",
-            "romaji": "SA"
+            "romaji": "SA",
+            "row": 2
           }, {
             "syllabary": "H",
             "character": "し",
-            "romaji": "SHI"
+            "romaji": "SHI",
+            "row": 2
           }, {
             "syllabary": "H",
             "character": "す",
-            "romaji": "SU"
+            "romaji": "SU",
+            "row": 2
           }, {
             "syllabary": "H",
             "character": "せ",
-            "romaji": "SE"
+            "romaji": "SE",
+            "row": 2
           }, {
             "syllabary": "H",
             "character": "そ",
-            "romaji": "SO"
+            "romaji": "SO",
+            "row": 2
           }, {
             "syllabary": "H",
             "character": "た",
-            "romaji": "TA"
+            "romaji": "TA",
+            "row": 3
           }, {
             "syllabary": "H",
             "character": "ち",
-            "romaji": "CHI"
+            "romaji": "CHI",
+            "row": 3
           }, {
             "syllabary": "H",
             "character": "つ",
-            "romaji": "TSU"
+            "romaji": "TSU",
+            "row": 3
           }, {
             "syllabary": "H",
             "character": "て",
-            "romaji": "TE"
+            "romaji": "TE",
+            "row": 3
           }, {
             "syllabary": "H",
             "character": "と",
-            "romaji": "TO"
+            "romaji": "TO",
+            "row": 3
           }, {
             "syllabary": "H",
             "character": "な",
-            "romaji": "NA"
+            "romaji": "NA",
+            "row": 4
           }, {
             "syllabary": "H",
             "character": "に",
-            "romaji": "NI"
+            "romaji": "NI",
+            "row": 4
           }, {
             "syllabary": "H",
             "character": "ぬ",
-            "romaji": "NU"
+            "romaji": "NU",
+            "row": 4
           }, {
             "syllabary": "H",
             "character": "ね",
-            "romaji": "NE"
+            "romaji": "NE",
+            "row": 4
           }, {
             "syllabary": "H",
             "character": "の",
-            "romaji": "NO"
+            "romaji": "NO",
+            "row": 4
           }, {
             "syllabary": "H",
             "character": "は",
-            "romaji": "HA"
+            "romaji": "HA",
+            "row": 5
           }, {
             "syllabary": "H",
             "character": "ひ",
-            "romaji": "HI"
+            "romaji": "HI",
+            "row": 5
           }, {
             "syllabary": "H",
             "character": "ふ",
-            "romaji": "FU"
+            "romaji": "FU",
+            "row": 5
           }, {
             "syllabary": "H",
             "character": "へ",
-            "romaji": "HE"
+            "romaji": "HE",
+            "row": 5
           }, {
             "syllabary": "H",
             "character": "ほ",
-            "romaji": "HO"
+            "romaji": "HO",
+            "row": 5
           }, {
             "syllabary": "H",
             "character": "ま",
-            "romaji": "MA"
+            "romaji": "MA",
+            "row": 6
           }, {
             "syllabary": "H",
             "character": "み",
-            "romaji": "MI"
+            "romaji": "MI",
+            "row": 6
           }, {
             "syllabary": "H",
             "character": "む",
-            "romaji": "MU"
+            "romaji": "MU",
+            "row": 6
           }, {
             "syllabary": "H",
             "character": "め",
-            "romaji": "ME"
+            "romaji": "ME",
+            "row": 6
           }, {
             "syllabary": "H",
             "character": "も",
-            "romaji": "MO"
+            "romaji": "MO",
+            "row": 6
           }, {
             "syllabary": "H",
             "character": "や",
-            "romaji": "YA"
+            "romaji": "YA",
+            "row": 7
           }, {
             "syllabary": "H",
             "character": "ゆ",
-            "romaji": "YU"
+            "romaji": "YU",
+            "row": 7
           }, {
             "syllabary": "H",
             "character": "よ",
-            "romaji": "YO"
+            "romaji": "YO",
+            "row": 7
           }, {
             "syllabary": "H",
             "character": "ら",
-            "romaji": "RA"
+            "romaji": "RA",
+            "row": 8
           }, {
             "syllabary": "H",
             "character": "り",
-            "romaji": "RI"
+            "romaji": "RI",
+            "row": 8
           }, {
             "syllabary": "H",
             "character": "る",
-            "romaji": "RU"
+            "romaji": "RU",
+            "row": 8
           }, {
             "syllabary": "H",
             "character": "れ",
-            "romaji": "RE"
+            "romaji": "RE",
+            "row": 8
           }, {
             "syllabary": "H",
             "character": "ろ",
-            "romaji": "RO"
+            "romaji": "RO",
+            "row": 8
           }, {
             "syllabary": "H",
             "character": "わ",
-            "romaji": "WA"
+            "romaji": "WA",
+            "row": 9
           }, {
             "syllabary": "H",
             "character": "を",
-            "romaji": "WO"
+            "romaji": "WO",
+            "row": 9
           }, {
             "syllabary": "H",
             "character": "ん",
-            "romaji": "N"
+            "romaji": "N",
+            "row": 10
           }, {
             "syllabary": "H",
             "character": "が",
-            "romaji": "GA"
+            "romaji": "GA",
+            "row": 11
           }, {
             "syllabary": "H",
             "character": "ぎ",
-            "romaji": "GI"
+            "romaji": "GI",
+            "row": 11
           }, {
             "syllabary": "H",
             "character": "ぐ",
-            "romaji": "GU"
+            "romaji": "GU",
+            "row": 11
           }, {
             "syllabary": "H",
             "character": "げ",
-            "romaji": "GE"
+            "romaji": "GE",
+            "row": 11
           }, {
             "syllabary": "H",
             "character": "ご",
-            "romaji": "GO"
+            "romaji": "GO",
+            "row": 11
           }, {
             "syllabary": "H",
             "character": "ざ",
-            "romaji": "ZA"
+            "romaji": "ZA",
+            "row": 12
           }, {
             "syllabary": "H",
             "character": "じ",
-            "romaji": "JI"
+            "romaji": "JI",
+            "row": 12
           }, {
             "syllabary": "H",
             "character": "ず",
-            "romaji": "ZU"
+            "romaji": "ZU",
+            "row": 12
           }, {
             "syllabary": "H",
             "character": "ぜ",
-            "romaji": "ZE"
+            "romaji": "ZE",
+            "row": 12
           }, {
             "syllabary": "H",
             "character": "ぞ",
-            "romaji": "ZO"
+            "romaji": "ZO",
+            "row": 12
           }, {
             "syllabary": "H",
             "character": "だ",
-            "romaji": "DA"
+            "romaji": "DA",
+            "row": 13
           }, {
             "syllabary": "H",
             "character": "*",
-            "romaji": "*"
+            "romaji": "*",
+            "row": 13
           }, {
             "syllabary": "H",
             "character": "*",
-            "romaji": "TZU"
+            "romaji": "TZU",
+            "row": 13
           }, {
             "syllabary": "H",
             "character": "で",
-            "romaji": "DE"
+            "romaji": "DE",
+            "row": 13
           }, {
             "syllabary": "H",
             "character": "ど",
-            "romaji": "DO"
+            "romaji": "DO",
+            "row": 13
           }, {
             "syllabary": "H",
             "character": "ば",
-            "romaji": "BA"
+            "romaji": "BA",
+            "row": 14
           }, {
             "syllabary": "H",
             "character": "び",
-            "romaji": "BI"
+            "romaji": "BI",
+            "row": 14
           }, {
             "syllabary": "H",
             "character": "ぶ",
-            "romaji": "BU"
+            "romaji": "BU",
+            "row": 14
           }, {
             "syllabary": "H",
             "character": "べ",
-            "romaji": "BE"
+            "romaji": "BE",
+            "row": 14
           }, {
             "syllabary": "H",
             "character": "ぼ",
-            "romaji": "BO"
+            "romaji": "BO",
+            "row": 14
           }, {
             "syllabary": "H",
             "character": "ぱ",
-            "romaji": "PA"
+            "romaji": "PA",
+            "row": 15
           }, {
             "syllabary": "H",
             "character": "ぴ",
-            "romaji": "PI"
+            "romaji": "PI",
+            "row": 15
           }, {
             "syllabary": "H",
             "character": "ぷ",
-            "romaji": "PU"
+            "romaji": "PU",
+            "row": 15
           }, {
             "syllabary": "H",
             "character": "ぺ",
-            "romaji": "PE"
+            "romaji": "PE",
+            "row": 15
           }, {
             "syllabary": "H",
             "character": "ぽ",
-            "romaji": "PO"
+            "romaji": "PO",
+            "row": 15
           }, {
             "syllabary": "H",
             "character": "きゃ",
-            "romaji": "KYA"
+            "romaji": "KYA",
+            "row": 16
           }, {
             "syllabary": "H",
             "character": "きゅ",
-            "romaji": "KYU"
+            "romaji": "KYU",
+            "row": 16
           }, {
             "syllabary": "H",
             "character": "きょ",
-            "romaji": "KYO"
+            "romaji": "KYO",
+            "row": 16
           }, {
             "syllabary": "H",
             "character": "しゃ",
-            "romaji": "SHA"
+            "romaji": "SHA",
+            "row": 17
           }, {
             "syllabary": "H",
             "character": "しゅ",
-            "romaji": "SHU"
+            "romaji": "SHU",
+            "row": 17
           }, {
             "syllabary": "H",
             "character": "しょ",
-            "romaji": "SHO"
+            "romaji": "SHO",
+            "row": 17
           }, {
             "syllabary": "H",
             "character": "ちゃ",
-            "romaji": "CHA"
+            "romaji": "CHA",
+            "row": 18
           }, {
             "syllabary": "H",
             "character": "ちゅ",
-            "romaji": "CHU"
+            "romaji": "CHU",
+            "row": 18
           }, {
             "syllabary": "H",
             "character": "ちょ",
-            "romaji": "CHO"
+            "romaji": "CHO",
+            "row": 18
           }, {
             "syllabary": "H",
             "character": "にゃ",
-            "romaji": "NYA"
+            "romaji": "NYA",
+            "row": 19
           }, {
             "syllabary": "H",
             "character": "にゅ",
-            "romaji": "NYU"
+            "romaji": "NYU",
+            "row": 19
           }, {
             "syllabary": "H",
             "character": "にょ",
-            "romaji": "NYO"
+            "romaji": "NYO",
+            "row": 19
           }, {
             "syllabary": "H",
             "character": "ひゃ",
-            "romaji": "HYA"
+            "romaji": "HYA",
+            "row": 20
           }, {
             "syllabary": "H",
             "character": "ひゅ",
-            "romaji": "HYU"
+            "romaji": "HYU",
+            "row": 20
           }, {
             "syllabary": "H",
             "character": "ひょ",
-            "romaji": "HYO"
+            "romaji": "HYO",
+            "row": 20
           }, {
             "syllabary": "H",
             "character": "みゃ",
-            "romaji": "MYA"
+            "romaji": "MYA",
+            "row": 21
           }, {
             "syllabary": "H",
             "character": "みゅ",
-            "romaji": "MYU"
+            "romaji": "MYU",
+            "row": 21
           }, {
             "syllabary": "H",
             "character": "みょ",
-            "romaji": "MYO"
+            "romaji": "MYO",
+            "row": 21
           }, {
             "syllabary": "H",
             "character": "りゃ",
-            "romaji": "RYA"
+            "romaji": "RYA",
+            "row": 22
           }, {
             "syllabary": "H",
             "character": "りゅ",
-            "romaji": "RYU"
+            "romaji": "RYU",
+            "row": 22
           }, {
             "syllabary": "H",
             "character": "りょ",
-            "romaji": "RYO"
+            "romaji": "RYO",
+            "row": 22
           }, {
             "syllabary": "H",
             "character": "ぎゃ",
-            "romaji": "GYA"
+            "romaji": "GYA",
+            "row": 23
           }, {
             "syllabary": "H",
             "character": "ぎゅ",
-            "romaji": "GYU"
+            "romaji": "GYU",
+            "row": 23
           }, {
             "syllabary": "H",
             "character": "ぎょ",
-            "romaji": "GYO"
+            "romaji": "GYO",
+            "row": 23
           }, {
             "syllabary": "H",
             "character": "じゃ",
-            "romaji": "JA"
+            "romaji": "JA",
+            "row": 24
           }, {
             "syllabary": "H",
             "character": "じゅ",
-            "romaji": "JU"
+            "romaji": "JU",
+            "row": 24
           }, {
             "syllabary": "H",
             "character": "じょ",
-            "romaji": "JO"
+            "romaji": "JO",
+            "row": 24
           }, {
             "syllabary": "H",
             "character": "びゃ",
-            "romaji": "BYA"
+            "romaji": "BYA",
+            "row": 25
           }, {
             "syllabary": "H",
             "character": "びゅ",
-            "romaji": "BYU"
+            "romaji": "BYU",
+            "row": 25
           }, {
             "syllabary": "H",
             "character": "びょ",
-            "romaji": "BYO"
+            "romaji": "BYO",
+            "row": 25
           }, {
             "syllabary": "H",
             "character": "ぴゃ",
-            "romaji": "PYA"
+            "romaji": "PYA",
+            "row": 26
           }, {
             "syllabary": "H",
             "character": "ぴゅ",
-            "romaji": "PYU"
+            "romaji": "PYU",
+            "row": 26
           }, {
             "syllabary": "ぴょ",
             "character": "ぽ",
-            "romaji": "PYO"
+            "romaji": "PYO",
+            "row": 26
           }, {
             "syllabary": "K",
             "character": "ア",
-            "romaji": "A"
+            "romaji": "A",
+            "row": 0
           }, {
             "syllabary": "K",
             "character": "イ",
-            "romaji": "I"
+            "romaji": "I",
+            "row": 0
           }, {
             "syllabary": "K",
             "character": "ウ",
-            "romaji": "U"
+            "romaji": "U",
+            "row": 0
           }, {
             "syllabary": "K",
             "character": "エ",
-            "romaji": "E"
+            "romaji": "E",
+            "row": 0
           }, {
             "syllabary": "K",
             "character": "オ",
-            "romaji": "O"
+            "romaji": "O",
+            "row": 0
           }, {
             "syllabary": "K",
             "character": "カ",
-            "romaji": "KA"
+            "romaji": "KA",
+            "row": 1
           }, {
             "syllabary": "K",
             "character": "キ",
-            "romaji": "KI"
+            "romaji": "KI",
+            "row": 1
           }, {
             "syllabary": "K",
             "character": "ク",
-            "romaji": "KU"
+            "romaji": "KU",
+            "row": 1
           }, {
             "syllabary": "K",
             "character": "ケ",
-            "romaji": "KE"
+            "romaji": "KE",
+            "row": 1
           }, {
             "syllabary": "K",
             "character": "コ",
-            "romaji": "KO"
+            "romaji": "KO",
+            "row": 1
           }, {
             "syllabary": "K",
             "character": "サ",
-            "romaji": "SA"
+            "romaji": "SA",
+            "row": 2
           }, {
             "syllabary": "K",
             "character": "シ",
-            "romaji": "SHI"
+            "romaji": "SHI",
+            "row": 2
           }, {
             "syllabary": "K",
             "character": "ス",
-            "romaji": "SU"
+            "romaji": "SU",
+            "row": 2
           }, {
             "syllabary": "K",
             "character": "セ",
-            "romaji": "SE"
+            "romaji": "SE",
+            "row": 2
           }, {
             "syllabary": "K",
             "character": "ソ",
-            "romaji": "SO"
+            "romaji": "SO",
+            "row": 2
           }, {
             "syllabary": "K",
             "character": "タ",
-            "romaji": "TA"
+            "romaji": "TA",
+            "row": 3
           }, {
             "syllabary": "K",
             "character": "チ",
-            "romaji": "CHI"
+            "romaji": "CHI",
+            "row": 3
           }, {
             "syllabary": "K",
             "character": "ツ",
-            "romaji": "TSU"
+            "romaji": "TSU",
+            "row": 3
           }, {
             "syllabary": "K",
             "character": "テ",
-            "romaji": "TE"
+            "romaji": "TE",
+            "row": 3
           }, {
             "syllabary": "K",
             "character": "ト",
-            "romaji": "TO"
+            "romaji": "TO",
+            "row": 3
           }, {
             "syllabary": "K",
             "character": "ナ",
-            "romaji": "NA"
+            "romaji": "NA",
+            "row": 4
           }, {
             "syllabary": "K",
             "character": "ニ",
-            "romaji": "NI"
+            "romaji": "NI",
+            "row": 4
           }, {
             "syllabary": "K",
             "character": "ヌ",
-            "romaji": "NU"
+            "romaji": "NU",
+            "row": 4
           }, {
             "syllabary": "K",
             "character": "ネ",
-            "romaji": "NE"
+            "romaji": "NE",
+            "row": 4
           }, {
             "syllabary": "K",
             "character": "ノ",
-            "romaji": "NO"
+            "romaji": "NO",
+            "row": 4
           }, {
             "syllabary": "K",
             "character": "ハ",
-            "romaji": "HA"
+            "romaji": "HA",
+            "row": 5
           }, {
             "syllabary": "K",
             "character": "ヒ",
-            "romaji": "HI"
+            "romaji": "HI",
+            "row": 5
           }, {
             "syllabary": "K",
             "character": "フ",
-            "romaji": "FU"
+            "romaji": "FU",
+            "row": 5
           }, {
             "syllabary": "K",
             "character": "ヘ",
-            "romaji": "HE"
+            "romaji": "HE",
+            "row": 5
           }, {
             "syllabary": "K",
             "character": "ホ",
-            "romaji": "HO"
+            "romaji": "HO",
+            "row": 5
           }, {
             "syllabary": "K",
             "character": "マ",
-            "romaji": "MA"
+            "romaji": "MA",
+            "row": 6
           }, {
             "syllabary": "K",
             "character": "ミ",
-            "romaji": "MI"
+            "romaji": "MI",
+            "row": 6
           }, {
             "syllabary": "K",
             "character": "ム",
-            "romaji": "MU"
+            "romaji": "MU",
+            "row": 6
           }, {
             "syllabary": "K",
             "character": "メ",
-            "romaji": "ME"
+            "romaji": "ME",
+            "row": 6
           }, {
             "syllabary": "K",
             "character": "モ",
-            "romaji": "MO"
+            "romaji": "MO",
+            "row": 6
           }, {
             "syllabary": "K",
             "character": "ヤ",
-            "romaji": "YA"
+            "romaji": "YA",
+            "row": 7
           }, {
             "syllabary": "K",
             "character": "ユ",
-            "romaji": "YU"
+            "romaji": "YU",
+            "row": 7
           }, {
             "syllabary": "K",
             "character": "ヨ",
-            "romaji": "YO"
+            "romaji": "YO",
+            "row": 7
           }, {
             "syllabary": "K",
             "character": "ラ",
-            "romaji": "RA"
+            "romaji": "RA",
+            "row": 8
           }, {
             "syllabary": "K",
             "character": "リ",
-            "romaji": "RI"
+            "romaji": "RI",
+            "row": 8
           }, {
             "syllabary": "K",
             "character": "ル",
-            "romaji": "RU"
+            "romaji": "RU",
+            "row": 8
           }, {
             "syllabary": "K",
             "character": "レ",
-            "romaji": "RE"
+            "romaji": "RE",
+            "row": 8
           }, {
             "syllabary": "K",
             "character": "ロ",
-            "romaji": "RO"
+            "romaji": "RO",
+            "row": 8
           }
       ]
 }
