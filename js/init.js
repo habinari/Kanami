@@ -14,8 +14,6 @@ $.getJSON('data/kana.json', function(data){
 
     $('[data-toggle="popover"]').popover();
 
-    $('#settingsModal button[name="apply"]').click();
-
     var $row = $('template#row');
     var $column = $('template#column');
     var $kanaCheckers;
@@ -45,10 +43,11 @@ $.getJSON('data/kana.json', function(data){
         var kanaId = kanas[i].syllabary + "-" + kanas[i].romaji;
         $currentRow.find('div').last().find('input').attr('id', "check" + kanaId);
         $currentRow.find('div').last().find('input').val(kanaId);
+        if(lastRow == 0)
+            $kanaCheckers.find('[type=checkbox]').prop('checked', true);
     }
 
-    $('#settingsModal input[type="radio"]').first().is(':checked', true);
-    $('#settingsModal input[type="radio"]').last().is(':checked', false);
+    $('#settingsModal input[type="radio"]').first().prop('checked', true);
     $('#katakanas').hide();
 
     $('#settingsModal input[type="checkbox"]').click(function(){
@@ -66,4 +65,7 @@ $.getJSON('data/kana.json', function(data){
             $(this).closest('div.row').find('input[type="checkbox"]').first().prop('checked', mustCheck);
         }
     });
+
+
+    $('#settingsModal button[name="apply"]').click();
 });
