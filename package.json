@@ -1,0 +1,22 @@
+{
+  "name": "light-kana",
+  "version": "2.0.0",
+  "description": "Minimalist page to practice Japanese syllabaries, Hiragana and Katakana.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabi404/light-kana.git"
+  },
+  "author": "Javier Parada Tallante",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kabi404/light-kana/issues"
+  },
+  "homepage": "https://github.com/kabi404/light-kana#readme",
+  "dependencies": {
+    "electron": "^3.0.2"
+  }
+}
