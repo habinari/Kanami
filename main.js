@@ -7,7 +7,7 @@ var app = new Vue({
         "romaji": "#",
       },
       syllabaries: {},
-      selectedSyllabaries: {},
+      selectedKanas: [],
       isCorrectAnswer: 'miau',
       isAnswered: false
     },
