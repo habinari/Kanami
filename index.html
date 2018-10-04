@@ -28,13 +28,13 @@
                     <a class="button is-outlined is-rounded is-pulled-right">Show</a>
                 </div>
                 <div class="column">
-                    <a class="button is-outlined is-rounded">Next</a>
+                    <a class="button is-outlined is-rounded" @click="nextKana()">Next</a>
                 </div>
             </div>
 
             <div class="columns is-centered is-mobile">
                 <div class="column is-5 is-narrow">
-                    <input id="checker" class="input is-rounded" type="text" placeholder="Romaji"/>
+                    <input id="checker" class="input is-rounded" v-bind:class="answer" type="text" placeholder="Romaji"/>
                 </div>
                 <div class="column is-narrow">
                     <a class="button is-outlined is-rounded" @click="checkAnswer()">Check</a>

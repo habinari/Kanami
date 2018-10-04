@@ -6,9 +6,10 @@ var app = new Vue({
         "character": "#",
         "romaji": "#",
       },
-      syllabaries: {
-          
-      }
+      syllabaries: {},
+      selectedSyllabaries: {},
+      isCorrectAnswer: 'miau',
+      isAnswered: false
     },
 
     created: function() {
@@ -16,16 +17,18 @@ var app = new Vue({
     },
 
     methods: {
+      nextKana: function(){
+        this.$data.isAnswered = false;
+      },
+
       openSettings: function(){
         
       },
+
       checkAnswer: function(){
-        let $checker = document.querySelector('input#checker');
-        $checker.classList.remove('is-danger');
-        $checker.classList.remove('is-success');
-        $checker.classList.add(
-          ($checker.value == this.$data.currentKana.romaji) ? 'is-success' : 'is-danger'
-        )
+        this.$data.isAnswered = true;
+        this.$data.isCorrectAnswer = 
+            document.querySelector('input#checker').value == this.$data.currentKana.romaji ;
       },
 
       getSyllabaries: function () {
@@ -39,6 +42,18 @@ var app = new Vue({
           }
         };
         xobj.send();
+      }
+    },
+
+    computed: {
+      answer: function(){
+        if (this.$data.isAnswered && this.$data.isCorrectAnswer){
+          return 'is-success';
+        } else if(this.$data.isAnswered){
+          return 'is-danger';
+        } else {
+          return '';
+        }
       }
     }
   })
