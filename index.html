@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+    <title>Light Kana</title>
+
+    <!-- Bulma CSS -->
+    <link rel="stylesheet" href="./node_modules/bulma/css/bulma.min.css"/>
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css"/>
@@ -15,120 +16,44 @@
 </head>
 <body>
     
-    <h1 class="text-center display-4 my-5">Light Kana</h1>
+    <h1 class="is-size-2 has-text-centered">Light Kana</h1>
 
     <div id="app">
-        <!-- Main View -->
+
+        <p class="is-size-1 has-text-centered">{{currentKana.character}}</p>
+
         <div class="container">
-            <div class="row justify-content-center pb-3">
-                <div class="col-3">
-                    <p class="h1 display-1 text-center" id="kana">#</p>
+            <div class="columns is-mobile">
+                <div class="column">
+                    <a class="button is-outlined is-rounded is-pulled-right">Show</a>
+                </div>
+                <div class="column">
+                    <a class="button is-outlined is-rounded">Next</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-                    <button type="button" class="btn btn-outline-dark float-right" id="nextButton">Next</button>
+
+            <div class="columns is-centered is-mobile">
+                <div class="column is-5 is-narrow">
+                    <input class="input is-rounded" type="text" placeholder="Romaji"/>
                 </div>
-                <div class="col-6">
-                    <button type="button" class="btn btn-outline-dark float-left" id="showButton" data-toggle="popover"
-                        data-trigger="focus" title="Kana char" data-content="Information">Show</button>
-                </div>
-            </div>
-            <div class="row justify-content-center my-3">
-                <div class="col-6">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <button class="btn btn-outline-secondary" type="button" id="checkButton">Check</button>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Romaji" aria-label="" aria-describedby="basic-addon1"
-                            id="checkInputText">
-                        <div class="valid-feedback">
-                            Correct answer!
-                        </div>
-                        <div class="invalid-feedback">
-                            Wrong Answer, try again or press "show" button.
-                        </div>
-                    </div>
+                <div class="column is-narrow">
+                    <a class="button is-outlined is-rounded" @click="check()">Check</a>
                 </div>
             </div>
-            <div class="row justify-content-center my-3">
-                <a href="" data-toggle="modal" data-target="#settingsModal"><i class="fas fa-cog h3"></i></a>
+
+            <div class="columns is-centered is-mobile">
+                <a href="#settings" class="is-size-4"><i class="fas fa-cog"></i></a>
             </div>
         </div>
-        <!-- End main view -->
-    
-    
-        <!-- Start Modal of Settings -->
-        <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Settings</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-    
-    
-                        <!-- Selected kanas -->
-                        <div class="container" name="hiraganaCheckGroup">
-                            <div class="row mb-3 justify-content-center">
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"
-                                        checked>
-                                    <label class="custom-control-label" for="customRadioInline1">HIRAGANA</label>
-                                </div>
-                                <div class="custom-control custom-radio custom-control-inline">
-                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                    <label class="custom-control-label" for="customRadioInline2">KATAKANA</label>
-                                </div>
-                            </div>
-                            <div name="hiraganas" id="hiraganas">
-    
-                            </div>
-                            <div name="katakanas" id="katakanas">
-    
-                            </div>
-                        </div>
-    
-                        <template id="row">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label" for="inlineCheckbox1"></label>
-                                    </div>
-                                </div>
-                                <div class="col-8">
-    
-                                </div>
-                            </div>
-                        </template>
-    
-                        <template id="column">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox">
-                                <label class="form-check-label" for="inlineCheckbox1"></label>
-                            </div>
-                        </template>
-    
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" name="apply">Apply</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Modal of settings-->
+
+
+
     </div>
+ 
+  
 
-    <!-- Bootstrap JS -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Vue -->
-    <script src="./node_modules/vue/dist/vue.min.js"></script>
+    <!-- Vue.js -->
+    <script src='./node_modules/vue/dist/vue.min.js'></script>
 
     <script>
         require('./main.js');
