@@ -19,8 +19,13 @@ var app = new Vue({
       openSettings: function(){
         
       },
-      check: function(){
-
+      checkAnswer: function(){
+        let $checker = document.querySelector('input#checker');
+        $checker.classList.remove('is-danger');
+        $checker.classList.remove('is-success');
+        $checker.classList.add(
+          ($checker.value == this.$data.currentKana.romaji) ? 'is-success' : 'is-danger'
+        )
       },
 
       getSyllabaries: function () {
