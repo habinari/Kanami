@@ -11,8 +11,15 @@ var app = new Vue({
         katakana: []
       },
       selectedKanas: [],
-      isCorrectAnswer: 'miau',
-      isAnswered: false
+      isCorrectAnswer: false,
+      isAnswered: false,
+
+      score: {
+        next: 0,
+        show: 0,
+        correctChecks: 0,
+        wrongChecks: 0,
+      }
     },
 
     created: function() {
@@ -25,6 +32,7 @@ var app = new Vue({
         this.$data.currentKana = this.$data.syllabaries.hiragana[
             Math.floor((Math.random() * this.$data.syllabaries.hiragana.length))
         ];
+        document.querySelector('#checker').value = '';
       },
 
       openSettings: function(){
