@@ -6,7 +6,10 @@ var app = new Vue({
         "character": "#",
         "romaji": "#",
       },
-      syllabaries: {},
+      syllabaries: {
+        hiragana: [],
+        katakana: []
+      },
       selectedKanas: [],
       isCorrectAnswer: 'miau',
       isAnswered: false
@@ -19,6 +22,9 @@ var app = new Vue({
     methods: {
       nextKana: function(){
         this.$data.isAnswered = false;
+        this.$data.currentKana = this.$data.syllabaries.hiragana[
+            Math.floor((Math.random() * this.$data.syllabaries.hiragana.length))
+        ];
       },
 
       openSettings: function(){
@@ -28,7 +34,7 @@ var app = new Vue({
       checkAnswer: function(){
         this.$data.isAnswered = true;
         this.$data.isCorrectAnswer = 
-            document.querySelector('input#checker').value == this.$data.currentKana.romaji ;
+            document.querySelector('#checker').value.toUpperCase() == this.$data.currentKana.romaji;
       },
 
       getSyllabaries: function () {
@@ -38,7 +44,7 @@ var app = new Vue({
         xobj.open('GET', './data/syllabaries.json', true);
         xobj.onreadystatechange = function () {
           if (xobj.readyState == 4 && xobj.status == "200") {
-            $this.$data.syllabaries = xobj.responseText;
+            $this.$data.syllabaries = JSON.parse(xobj.responseText);
           }
         };
         xobj.send();
