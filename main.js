@@ -14,6 +14,8 @@ var app = new Vue({
       isCorrectAnswer: false,
       isAnswered: false,
 
+      showScore: true,
+
       score: {
         next: 0,
         show: 0,
@@ -56,6 +58,10 @@ var app = new Vue({
           }
         };
         xobj.send();
+      },
+
+      toggleScore: function(){
+        this.$data.showScore = !this.$data.showScore;
       }
     },
 

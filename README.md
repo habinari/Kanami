@@ -12,10 +12,11 @@ Minimalist app to practice Japanese syllabaries, Hiragana and Katakana.
 
 ## Built With
 
-* [Bootstrap](https://getbootstrap.com/) - The CSS framework used.
 * [JavaScript](https://www.javascript.com/) - The programming language.
 * [Node.js](https://nodejs.org/) - The runtime environment used.
-* [Electron](https://electronjs.org/) - The JavaScript framework used.
+* [Electron](https://electronjs.org/) - The JavaScript (Back) framework used.
+* [Vue](https://vuejs.org/) - The JavaScript (Front) framework used.
+* [Bulma](https://bulma.io/) - The CSS framework used.
 
 ## Versioning
 
