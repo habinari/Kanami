@@ -18,7 +18,7 @@ var app = new Vue({
       showKanaInfo: false,
 
       score: {
-        next: 0,
+        next: -1,
         show: 0,
         correctChecks: 0,
         wrongChecks: 0,
@@ -38,10 +38,14 @@ var app = new Vue({
             Math.floor((Math.random() * this.$data.syllabaries.hiragana.length))
         ];
         document.querySelector('#checker').value = '';
+
+        this.$data.score.next++;
       },
 
       showAnswer: function(){
         this.$data.showKanaInfo = true;
+
+        this.$data.score.show++;
       },
 
       openSettings: function(){
@@ -49,9 +53,13 @@ var app = new Vue({
       },
 
       checkAnswer: function(){
-        this.$data.isAnswered = true;
         this.$data.isCorrectAnswer = 
             document.querySelector('#checker').value.toUpperCase() == this.$data.currentKana.romaji;
+        
+        if(!this.$data.isAnswered)
+          (this.$data.isCorrectAnswer) ? this.$data.score.correctChecks++ : this.$data.score.wrongChecks++;
+
+        this.$data.isAnswered = true;
       },
 
       getSyllabaries: function () {
@@ -81,6 +89,22 @@ var app = new Vue({
         } else {
           return '';
         }
+      },
+
+      scoreMedia: function(){
+        var res = (this.$data.score.correctChecks / (this.$data.score.correctChecks + this.$data.score.wrongChecks))
+          || 0;
+        
+        return Math.round(res * 100) / 100
+      },
+
+      totalScore: function(){
+        return (
+            this.$data.score.next -
+            this.$data.score.show +
+            this.$data.score.correctChecks -
+            this.$data.score.wrongChecks
+        );
       }
     },
 
