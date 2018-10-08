@@ -12,13 +12,16 @@
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css"/>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./main.css"/>
     
 </head>
 <body>
     
     <div id="app">
 
-        <p class="is-size-1 has-text-centered">{{currentKana.character}}</p>
+        <p class="is-size-1 has-text-centered  m-t-xs">{{currentKana.character}}</p>
 
         <div class="container">
             <div class="columns is-mobile">
@@ -44,7 +47,7 @@
             </div>
         </div>
 
-        <div class="container">
+        <div class="container m-t-lg">
             <div class="columns">
                 <div class="column is-10 is-offset-1">
                     <div class="card">
@@ -105,6 +108,7 @@
     <!-- Vue.js -->
     <script src='./node_modules/vue/dist/vue.min.js'></script>
 
+    <!-- Main JS -->
     <script>
         require('./main.js');
     </script>
