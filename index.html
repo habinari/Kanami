@@ -21,12 +21,14 @@
     
     <div id="app">
 
-        <p class="is-size-1 has-text-centered  m-t-xs">{{currentKana.character}}</p>
+        <p id="theInfo" class="is-size-1 has-text-centered m-t-xs">
+            {{currentKana.character}} <span v-if="showKanaInfo">- {{currentKana.romaji | capitalize}}</span>
+        </p>
 
         <div class="container">
             <div class="columns is-mobile">
                 <div class="column">
-                    <a class="button is-outlined is-rounded is-pulled-right">Show</a>
+                    <a class="button is-outlined is-rounded is-pulled-right" @click="showAnswer()">Show</a>
                 </div>
                 <div class="column">
                     <a class="button is-outlined is-rounded" @click="nextKana()">Next</a>

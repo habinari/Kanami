@@ -15,6 +15,7 @@ var app = new Vue({
       isAnswered: false,
 
       showScore: true,
+      showKanaInfo: false,
 
       score: {
         next: 0,
@@ -31,10 +32,16 @@ var app = new Vue({
     methods: {
       nextKana: function(){
         this.$data.isAnswered = false;
+        this.$data.showKanaInfo = false;
+
         this.$data.currentKana = this.$data.syllabaries.hiragana[
             Math.floor((Math.random() * this.$data.syllabaries.hiragana.length))
         ];
         document.querySelector('#checker').value = '';
+      },
+
+      showAnswer: function(){
+        this.$data.showKanaInfo = true;
       },
 
       openSettings: function(){
@@ -74,6 +81,13 @@ var app = new Vue({
         } else {
           return '';
         }
+      }
+    },
+
+    filters: {
+      capitalize: function (str) {
+        return str.toLowerCase()
+          .replace( /\b./g, val => val.toUpperCase() );
       }
     }
   })
