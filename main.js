@@ -35,6 +35,11 @@ var app = new Vue({
 
     methods: {
       nextKana: function(){
+
+        if(this.$data.selectedKanas.length == 0){
+          this.updateCheckedKanas();
+        }
+
         this.$data.isAnswered = false;
         this.$data.showKanaInfo = false;
 
@@ -107,7 +112,7 @@ var app = new Vue({
           }
         }
 
-        //Clear Score
+        // TODO: Clear Score
       }
     },
 
