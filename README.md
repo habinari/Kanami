@@ -9,14 +9,16 @@ Minimalist app to practice Japanese syllabaries, Hiragana and Katakana.
 * Go to [http://www.kabi404.me/light-kana](http://www.kabi404.me/light-Kana)
 * Press **"NEXT"** button to see the next kana.
 * Press **"SHOW"** button to see the information of current kana.
+* Press **"CHECK"** button to check that your answer is correct.
 
 ## Built With
 
-* [JavaScript](https://www.javascript.com/) - The programming language.
-* [Node.js](https://nodejs.org/) - The runtime environment used.
-* [Electron](https://electronjs.org/) - The JavaScript (Back) framework used.
-* [Vue](https://vuejs.org/) - The JavaScript (Front) framework used.
-* [Bulma](https://bulma.io/) - The CSS framework used.
+* [JavaScript](https://www.javascript.com/) - Programming language.
+* [Node.js](https://nodejs.org/) - Runtime environment.
+* [Electron](https://electronjs.org/) - JavaScript Framework.
+* [Vue](https://vuejs.org/) - JavaScript Framework.
+* [Bulma](https://bulma.io/) - CSS framework.
+* [JSON](https://www.json.org/) - Format of stored data.
 
 ## Versioning
 
@@ -24,7 +26,7 @@ I use [SemVer](http://semver.org/) for versioning. For the versions available, s
 
 ## Authors
 
-* **Javier Parada** - *Initial work* - [kabi404](https://github.com/kabi404)
+* **Javier Parada** - *All* - [kabi404](https://github.com/kabi404)
 
 ## License
 
