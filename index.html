@@ -21,10 +21,12 @@
     
     <div id="app">
 
+        <!-- Start Main functionality -->
         <p id="theInfo" class="is-size-1 has-text-centered m-t-xs">
             {{currentKana.character}} <span v-if="showKanaInfo">- {{currentKana.romaji | capitalize}}</span>
         </p>
 
+        
         <div class="container">
             <div class="columns is-mobile">
                 <div class="column">
@@ -48,7 +50,9 @@
                 <a href="#settings" class="is-size-4"><i class="fas fa-cog"></i></a>
             </div>
         </div>
+        <!-- End Main functionality -->
 
+        <!-- Start Score-pannel -->
         <div class="container m-t-lg">
             <div class="columns">
                 <div class="column is-10 is-offset-1">
@@ -63,7 +67,7 @@
                                 </span>
                             </a>
                         </header>
-                        <div class="card-content" v-if="showScore" >
+                        <div class="card-content" v-if="showScore">
                             <div class="content container">
                                 <div class="columns is-centered is-mobile">
                                     <div class="column is-2">
@@ -103,6 +107,68 @@
                 </div>
             </div>
         </div>
+        <!-- End Score-pannel -->
+
+        <!-- Start Settings -->
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Settings
+                            </p>
+                            <a href="#" @click="toggleSettings" class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </header>
+                        <div class="card-content" v-if="showSettings">
+                            <div class="content container">
+                                <div class="columns is-centered is-mobile">
+                                    <div class="control">
+                                        <label class="radio">
+                                          <input @click="toggleSyllabary('HIRAGANA')" type="radio" name="syllabary" checked> Hiragana
+                                        </label>
+                                        <label class="radio">
+                                          <input @click="toggleSyllabary('KATAKANA')" type="radio" name="syllabary"> Katakana
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <template id="kanaRows">
+                                    <div v-for="(syllableRow, index) in syllabaries.hiragana" class="columns">
+                                        <div class="column is-3">
+                                            <label class="checkbox">
+                                                <input type="checkbox">
+                                                 {{syllableRow[0].romaji.charAt(0)}}
+                                            </label>
+                                        </div>
+
+                                        <div v-for="(syllable, subindex) in syllableRow" class="column">
+                                            <input type="checkbox" 
+                                                v-model="syllabaries.hiragana[index][subindex].checked"
+                                                @click="updateCheckedKanas()"
+                                            >
+                                             {{syllable.character}}
+                                        </div>
+                                        
+                                    </div>
+                                </template>
+
+                                <div class="columns">
+                                    <div class="column">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Settings -->
     </div>
  
   

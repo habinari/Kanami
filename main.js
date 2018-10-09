@@ -10,11 +10,15 @@ var app = new Vue({
         hiragana: [],
         katakana: []
       },
+
+      selectedSyllabary: 'HIRAGANA',
       selectedKanas: [],
+
       isCorrectAnswer: false,
       isAnswered: false,
 
       showScore: true,
+      showSettings: false,
       showKanaInfo: false,
 
       score: {
@@ -34,9 +38,12 @@ var app = new Vue({
         this.$data.isAnswered = false;
         this.$data.showKanaInfo = false;
 
-        this.$data.currentKana = this.$data.syllabaries.hiragana[
-            Math.floor((Math.random() * this.$data.syllabaries.hiragana.length))
-        ];
+        var randomKana = Math.floor((Math.random() * this.$data.syllabaries.hiragana.length));
+
+        this.$data.currentKana = this.$data.syllabaries.hiragana
+          [randomKana]
+          [Math.floor((Math.random() * this.$data.syllabaries.hiragana[randomKana].length))];
+        
         document.querySelector('#checker').value = '';
 
         this.$data.score.next++;
@@ -77,6 +84,31 @@ var app = new Vue({
 
       toggleScore: function(){
         this.$data.showScore = !this.$data.showScore;
+        this.$data.showSettings = false;
+      },
+      toggleSettings: function(){
+        this.$data.showSettings = !this.$data.showSettings;
+        this.$data.showScore = false;
+      },
+      toggleSyllabary: function(syllabary){
+        this.$data.selectedSyllabary = syllabary;
+      },
+
+      updateCheckedKanas: function(){
+        var $this = this;
+
+        selectedKanas = [];
+        var syllabary = (this.$data.selectedSyllabary == 'HIRAGANA') ? this.$data.syllabaries.hiragana : this.$data.syllabaries.katakana;
+
+        for(var row = 0; row < syllabary.length; row++){
+          for(var item = 0; item < syllabary[row].length; item++){
+            if(syllabary[row][item].checked)
+              $this.$data.selectedKanas.push({
+                row,
+                item
+              });
+          }
+        }
       }
     },
 
@@ -114,4 +146,4 @@ var app = new Vue({
           .replace( /\b./g, val => val.toUpperCase() );
       }
     }
-  })
+  });
