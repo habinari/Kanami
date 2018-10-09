@@ -38,11 +38,9 @@ var app = new Vue({
         this.$data.isAnswered = false;
         this.$data.showKanaInfo = false;
 
-        var randomKana = Math.floor((Math.random() * this.$data.syllabaries.hiragana.length));
+        var randomKana = Math.floor((Math.random() * this.$data.selectedKanas.length));
 
-        this.$data.currentKana = this.$data.syllabaries.hiragana
-          [randomKana]
-          [Math.floor((Math.random() * this.$data.syllabaries.hiragana[randomKana].length))];
+        this.$data.currentKana = this.$data.selectedKanas[randomKana];
         
         document.querySelector('#checker').value = '';
 
@@ -103,12 +101,13 @@ var app = new Vue({
         for(var row = 0; row < syllabary.length; row++){
           for(var item = 0; item < syllabary[row].length; item++){
             if(syllabary[row][item].checked)
-              $this.$data.selectedKanas.push({
-                row,
-                item
-              });
+              $this.$data.selectedKanas.push(
+                syllabary[row][item]
+              );
           }
         }
+
+        //Clear Score
       }
     },
 

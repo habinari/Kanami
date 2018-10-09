@@ -137,7 +137,7 @@
                                     </div>
                                 </div>
                                 
-                                <template id="kanaRows">
+                                <template>
                                     <div v-for="(syllableRow, index) in syllabaries.hiragana" class="columns">
                                         <div class="column is-3">
                                             <label class="checkbox">
@@ -149,17 +149,15 @@
                                         <div v-for="(syllable, subindex) in syllableRow" class="column">
                                             <input type="checkbox" 
                                                 v-model="syllabaries.hiragana[index][subindex].checked"
-                                                @click="updateCheckedKanas()"
                                             >
                                              {{syllable.character}}
                                         </div>
-                                        
                                     </div>
                                 </template>
 
-                                <div class="columns">
+                                <div class="columns has-text-centered is-mobile">
                                     <div class="column">
-
+                                        <a @click="updateCheckedKanas" class="button is-outlined is-rounded">Update</a>
                                     </div>
                                 </div>
                             </div>
