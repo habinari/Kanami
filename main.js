@@ -113,6 +113,16 @@ var app = new Vue({
         }
 
         // TODO: Clear Score
+      },
+
+      updateKanaRowCheckBox: function(row){
+        var syllabary = (this.$data.selectedSyllabary == 'HIRAGANA') ? this.$data.syllabaries.hiragana : this.$data.syllabaries.katakana;
+
+        var $checker = document.querySelectorAll('.row-checkbox')[row];
+
+        for(var i = 0; i < syllabary[row].length; i++){
+          syllabary[row][i].checked = $checker.checked;
+        }
       }
     },
 
