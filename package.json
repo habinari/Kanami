@@ -1,7 +1,7 @@
 {
-  "name": "light-kana",
+  "name": "kanami",
   "version": "2.0.0",
-  "description": "Minimalist page to practice Japanese syllabaries, Hiragana and Katakana.",
+  "description": "Minimalist app to practice Japanese syllabaries, Hiragana and Katakana.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
