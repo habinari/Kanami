@@ -137,13 +137,12 @@
                                 <template>
                                     <div v-for="(syllableRow, index) in currentSyllabary" class="columns">
                                         <div class="column is-3">
-                                            <label class="checkbox">
-                                                <input type="checkbox" 
-                                                    class="row-checkbox" 
-                                                    @click="updateKanaRowCheckBox(index)"
-                                                >
-                                                 {{syllableRow[0].romaji.charAt(0)}}
-                                            </label>
+                                                <a class="button is-small" @click="updateKanaRowCheckBox(index, true)">
+                                                    +
+                                                </a>
+                                                <a class="button is-small" @click="updateKanaRowCheckBox(index, false)">
+                                                    -
+                                                </a>
                                         </div>
 
                                         <div v-for="(syllable, subindex) in syllableRow" class="column">

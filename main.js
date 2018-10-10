@@ -115,13 +115,11 @@ var app = new Vue({
         
       },
 
-      updateKanaRowCheckBox: function(row){
+      updateKanaRowCheckBox: function(row, mustCheck){
         var syllabary = (this.$data.selectedSyllabary == 'HIRAGANA') ? this.$data.syllabaries.hiragana : this.$data.syllabaries.katakana;
 
-        var $checker = document.querySelectorAll('.row-checkbox')[row];
-
         for(var i = 0; i < syllabary[row].length; i++){
-          syllabary[row][i].checked = $checker.checked;
+          syllabary[row][i].checked = mustCheck;
         }
       }
     },
