@@ -112,7 +112,11 @@ var app = new Vue({
           }
         }
 
-        // TODO: Clear Score
+        this.$data.score.next = -1;
+        this.$data.score.show = 0;
+        this.$data.score.correctChecks = 0;
+        this.$data.score.wrongChecks = 0;
+        
       },
 
       updateKanaRowCheckBox: function(row){
