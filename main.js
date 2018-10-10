@@ -58,10 +58,6 @@ var app = new Vue({
         this.$data.score.show++;
       },
 
-      openSettings: function(){
-        
-      },
-
       checkAnswer: function(){
         this.$data.isCorrectAnswer = 
             document.querySelector('#checker').value.toUpperCase() == this.$data.currentKana.romaji;
@@ -155,13 +151,20 @@ var app = new Vue({
             this.$data.score.correctChecks -
             this.$data.score.wrongChecks
         );
-      }
+      },
     },
 
     filters: {
       capitalize: function (str) {
         return str.toLowerCase()
           .replace( /\b./g, val => val.toUpperCase() );
+      },
+
+      negativeIsZero: function(num){
+        if(num < 0)
+          num = 0;
+        
+        return num;
       }
     }
   });

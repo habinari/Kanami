@@ -73,9 +73,9 @@
                                         <p>Balance: </p>
                                     </div>
                                     <div class="column is-1">
-                                        <p>{{score.next}}</p>
+                                        <p>{{score.next | negativeIsZero}}</p>
                                         <p>{{score.show}}</p>
-                                        <p>{{score.next - score.show}}</p>
+                                        <p>{{(score.next - score.show) | negativeIsZero}}</p>
                                     </div>
                                     <div class="column is-2">
                                         <p>Correct: </p>
@@ -95,7 +95,7 @@
                                     <div class="column is-1">
                                         <p>{{score.correctChecks + score.wrongChecks}}</p>
                                         <p>{{ scoreMedia }}</p>
-                                        <p>{{ totalScore }}</p>
+                                        <p>{{ totalScore | negativeIsZero}}</p>
                                     </div>
                                 </div>
                             </div>
