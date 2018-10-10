@@ -96,7 +96,7 @@ var app = new Vue({
       updateCheckedKanas: function(){
         var $this = this;
 
-        selectedKanas = [];
+        this.$data.selectedKanas = [];
         var syllabary = (this.$data.selectedSyllabary == 'HIRAGANA') ? this.$data.syllabaries.hiragana : this.$data.syllabaries.katakana;
 
         for(var row = 0; row < syllabary.length; row++){
@@ -152,6 +152,14 @@ var app = new Vue({
             this.$data.score.wrongChecks
         );
       },
+
+      currentSyllabary: function(){
+        if(this.$data.selectedSyllabary == 'HIRAGANA'){
+          return this.$data.syllabaries.hiragana;
+        } else {
+          return this.$data.syllabaries.katakana;
+        }
+      }
     },
 
     filters: {

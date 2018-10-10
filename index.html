@@ -135,7 +135,7 @@
                                 </div>
                                 
                                 <template>
-                                    <div v-for="(syllableRow, index) in syllabaries.hiragana" class="columns">
+                                    <div v-for="(syllableRow, index) in currentSyllabary" class="columns">
                                         <div class="column is-3">
                                             <label class="checkbox">
                                                 <input type="checkbox" 
@@ -148,7 +148,7 @@
 
                                         <div v-for="(syllable, subindex) in syllableRow" class="column">
                                             <input type="checkbox"
-                                                v-model="syllabaries.hiragana[index][subindex].checked"
+                                                v-model="currentSyllabary[index][subindex].checked"
                                             >
                                              {{syllable.character}}
                                         </div>
