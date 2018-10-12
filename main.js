@@ -13,6 +13,7 @@ var app = new Vue({
 
       selectedSyllabary: 'HIRAGANA',
       selectedKanas: [],
+      unusedKanas: [],
 
       isCorrectAnswer: false,
       isAnswered: false,
@@ -40,12 +41,17 @@ var app = new Vue({
           this.updateCheckedKanas();
         }
 
+        if(this.$data.unusedKanas.length == 0){
+          this.$data.unusedKanas = this.$data.selectedKanas.slice();
+        }
+
         this.$data.isAnswered = false;
         this.$data.showKanaInfo = false;
 
-        var randomKana = Math.floor((Math.random() * this.$data.selectedKanas.length));
+        var randomKana = Math.floor((Math.random() * this.$data.unusedKanas.length));
 
-        this.$data.currentKana = this.$data.selectedKanas[randomKana];
+        this.$data.currentKana = this.$data.unusedKanas[randomKana];
+        this.$data.unusedKanas.splice(randomKana, 1);
         
         document.querySelector('#checker').value = '';
 
@@ -107,6 +113,8 @@ var app = new Vue({
               );
           }
         }
+
+        this.$data.unusedKanas = this.$data.selectedKanas.slice();
 
         this.$data.score.next = -1;
         this.$data.score.show = 0;
