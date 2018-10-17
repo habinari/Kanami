@@ -20,7 +20,6 @@ var app = new Vue({
       isCorrectAnswer: false,
       isAnswered: false,
 
-      showScore: true,
       showSettings: false,
       showKanaInfo: false,
 
@@ -92,7 +91,6 @@ var app = new Vue({
       
       toggleSettings: function(){
         this.$data.showSettings = !this.$data.showSettings;
-        this.$data.showScore = false;
       },
       toggleSyllabary: function(syllabary){
         this.$data.selectedSyllabary = syllabary;

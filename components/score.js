@@ -59,14 +59,14 @@ var score = Vue.component('score', {
     
     `,
 
-    props: ['score', 'showScore'],
+    props: ['score'],
 
     data: function(){
       return {
 
         score: this.score,
 
-        isVisible: this.showScore
+        isVisible: true
       }
     },
 
@@ -93,7 +93,6 @@ var score = Vue.component('score', {
 
       toggleScore: function(){
         this.$data.isVisible = !this.$data.isVisible;
-        //this.$data.showSettings = false;
       },
     },
 
