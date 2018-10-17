@@ -1,4 +1,4 @@
-var score = require('./score');
+var score = require('./components/score');
 
 var app = new Vue({
     el: '#app',
