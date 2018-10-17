@@ -1,3 +1,5 @@
+var score = require('./score');
+
 var app = new Vue({
     el: '#app',
 
@@ -18,7 +20,6 @@ var app = new Vue({
       isCorrectAnswer: false,
       isAnswered: false,
 
-      showScore: true,
       showSettings: false,
       showKanaInfo: false,
 
@@ -87,10 +88,7 @@ var app = new Vue({
         xobj.send();
       },
 
-      toggleScore: function(){
-        this.$data.showScore = !this.$data.showScore;
-        this.$data.showSettings = false;
-      },
+      
       toggleSettings: function(){
         this.$data.showSettings = !this.$data.showSettings;
         this.$data.showScore = false;
@@ -143,22 +141,6 @@ var app = new Vue({
         }
       },
 
-      scoreMedia: function(){
-        var res = (this.$data.score.correctChecks / (this.$data.score.correctChecks + this.$data.score.wrongChecks))
-          || 0;
-        
-        return Math.round(res * 100) / 100
-      },
-
-      totalScore: function(){
-        return (
-            this.$data.score.next -
-            this.$data.score.show +
-            this.$data.score.correctChecks -
-            this.$data.score.wrongChecks
-        );
-      },
-
       currentSyllabary: function(){
         if(this.$data.selectedSyllabary == 'HIRAGANA'){
           return this.$data.syllabaries.hiragana;
@@ -172,13 +154,7 @@ var app = new Vue({
       capitalize: function (str) {
         return str.toLowerCase()
           .replace( /\b./g, val => val.toUpperCase() );
-      },
-
-      negativeIsZero: function(num){
-        if(num < 0)
-          num = 0;
-        
-        return num;
       }
+
     }
   });
