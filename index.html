@@ -49,7 +49,11 @@
         </div>
         <!-- End Main functionality -->
 
-        <score></score>
+        <score
+            v-bind:score="score"
+            v-bind:showScore="showScore"
+        >
+        </score>
 
         <!-- Start Settings -->
         <div class="container">

@@ -1,6 +1,7 @@
 var score = Vue.component('score', {
     template:
     `
+
     <div class="container m-t-lg">
         <div class="columns">
             <div class="column is-10 is-offset-1">
@@ -15,7 +16,7 @@ var score = Vue.component('score', {
                             </span>
                         </a>
                     </header>
-                    <div class="card-content" v-if="showScore">
+                    <div class="card-content" v-if="isVisible">
                         <div class="content container">
                             <div class="columns is-centered is-mobile">
                                 <div class="column is-2">
@@ -57,19 +58,20 @@ var score = Vue.component('score', {
     </div>
     
     `,
+
+    props: ['score', 'showScore'],
+
     data: function(){
       return {
-        score: {
-          next: -1,
-          show: 0,
-          correctChecks: 0,
-          wrongChecks: 0,
-        },
 
-        showScore: true
+        score: this.score,
+
+        isVisible: this.showScore
       }
     },
+
     computed: {
+
       scoreMedia: function(){
         var res = (this.$data.score.correctChecks / (this.$data.score.correctChecks + this.$data.score.wrongChecks))
           || 0;
@@ -88,13 +90,15 @@ var score = Vue.component('score', {
     },
 
     methods: {
+
       toggleScore: function(){
-        this.$data.showScore = !this.$data.showScore;
-        this.$data.showSettings = false;
+        this.$data.isVisible = !this.$data.isVisible;
+        //this.$data.showSettings = false;
       },
     },
 
     filters: {
+
       negativeIsZero: function(num){
         if(num < 0)
           num = 0;

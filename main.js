@@ -20,6 +20,7 @@ var app = new Vue({
       isCorrectAnswer: false,
       isAnswered: false,
 
+      showScore: true,
       showSettings: false,
       showKanaInfo: false,
 
