@@ -1,6 +1,96 @@
 <template>
     <div>
-        <h1>{{selectedSyllabary}}</h1>
+        <p id="theInfo" class="is-size-1 has-text-centered m-t-xs">
+            {{currentKana.character}} <span v-if="showKanaInfo">- {{currentKana.romaji | capitalize}}</span>
+        </p>
+
+        
+        <div class="container">
+            <div class="columns is-mobile">
+                <div class="column">
+                    <a class="button is-outlined is-rounded is-pulled-right" @click="showAnswer()">Show</a>
+                </div>
+                <div class="column">
+                    <a class="button is-outlined is-rounded" @click="nextKana()">Next</a>
+                </div>
+            </div>
+
+            <div class="columns is-centered is-mobile">
+                <div class="column is-5 is-narrow">
+                    <input id="checker" class="input is-rounded" v-bind:class="answer" type="text" placeholder="Romaji"/>
+                </div>
+                <div class="column is-narrow">
+                    <a class="button is-outlined is-rounded" @click="checkAnswer()">Check</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Main functionality -->
+
+        <Score
+            v-bind:score="score"
+        >
+        </Score>
+
+        <!-- Start Settings -->
+        <div class="container">
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <div class="card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Settings
+                            </p>
+                            <a href="#" @click="toggleSettings" class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </header>
+                        <div class="card-content" v-if="showSettings">
+                            <div class="content container">
+                                <div class="columns is-centered is-mobile">
+                                    <div class="control">
+                                        <label class="radio">
+                                          <input @click="toggleSyllabary('HIRAGANA')" type="radio" name="syllabary" checked> Hiragana
+                                        </label>
+                                        <label class="radio">
+                                          <input @click="toggleSyllabary('KATAKANA')" type="radio" name="syllabary"> Katakana
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <template>
+                                    <div v-for="(syllableRow, index) in currentSyllabary" :key="`${index}-${currentSyllabary}`" class="columns">
+                                        <div class="column is-3">
+                                                <a class="button is-small" @click="updateKanaRowCheckBox(index, true)">
+                                                    +
+                                                </a>
+                                                <a class="button is-small" @click="updateKanaRowCheckBox(index, false)">
+                                                    -
+                                                </a>
+                                        </div>
+
+                                        <div v-for="(syllable, subindex) in syllableRow" :key="syllable.character" class="column">
+                                            <input type="checkbox"
+                                                v-model="currentSyllabary[index][subindex].checked"
+                                            >
+                                             {{syllable.character}}
+                                        </div>
+                                    </div>
+                                </template>
+
+                                <div class="columns has-text-centered is-mobile">
+                                    <div class="column">
+                                        <button id="updateButton" @click="updateCheckedKanas" class="button is-outlined is-rounded">Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
 
     </div>
 </template>
@@ -8,6 +98,7 @@
 <script>
 
 import syll from '../../static/syllabaries.json';
+import Score from './components/Score.vue'
 
 export default {
     data: function() {
@@ -42,7 +133,7 @@ export default {
     },
 
     components: {
-        
+        'Score': Score
     },
 
     created: function() {
