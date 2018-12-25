@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kabi404/light-kana.git"
+    "url": "git+https://github.com/kabi404/kanami.git"
   },
   "author": "Javier Parada Tallante <kabi404@outlook.com> (https://www.kabi404.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kabi404/light-kana/issues"
+    "url": "https://github.com/kabi404/kanami/issues"
   },
   "homepage": "http://www.kabi404.me/kanami",
   "dependencies": {
