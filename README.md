@@ -1,14 +1,20 @@
 # Kanami
-[![](https://img.shields.io/github/license/kabi404/kanami.svg)](https://github.com/kabi404/kanami/blob/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![](https://img.shields.io/github/license/kabi404/kanami.svg?style=flat-square)](https://github.com/kabi404/kanami/blob/master/LICENSE)
+![](https://img.shields.io/badge/version-1.0.0-blue.svg?style=flat-square)
+![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
-Minimalist desktop and web app to practice Japanese syllabaries, Hiragana and Katakana. Made with Electron, Vue and Webpack. 
+![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Windows)
+![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Apple&logoColor=white)
+![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Linux&logoColor=white)
+
+
+Minimalist desktop and web app to practice Japanese syllabaries, Hiragana and Katakana. Made with Electron, Vue and Webpack.
 
 ## Getting Started
 
 * Install and run.
 * Choose syllables to practice opening "Settings" panel.
-    * To add or remove an entire row press the "+" or "-" button.
+    * Add or remove an entire row pressing "+" or "-" button.
     * Use checkboxes to add or remove syllables.
 * Press **"NEXT"** button to see the next kana.
 * Press **"SHOW"** button to see the information of current kana.
