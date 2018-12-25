@@ -34,8 +34,8 @@
 
         <!-- Start Settings -->
         <div class="container">
-            <div class="columns">
-                <div class="column is-10 is-offset-1">
+            <div class="columns is-centered">
+                <div class="column is-10">
                     <div class="card">
                         <header class="card-header">
                             <p class="card-header-title">
@@ -48,7 +48,7 @@
                             </a>
                         </header>
                         <div class="card-content" v-if="showSettings">
-                            <div class="content container">
+                            <div class="content">
                                 <div class="columns is-centered is-mobile">
                                     <div class="control">
                                         <label class="radio">

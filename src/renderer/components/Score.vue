@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div class="container m-t-lg">
-        <div class="columns">
-            <div class="column is-10 is-offset-1">
+        <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-10">
                 <div class="card">
                     <header class="card-header">
                         <p class="card-header-title">
@@ -15,7 +15,7 @@
                         </a>
                     </header>
                     <div class="card-content" v-if="isVisible">
-                        <div class="content container">
+                        <div class="content">
                             <div class="columns is-centered is-mobile">
                                 <div class="column is-2">
                                     <p>Next: </p>
