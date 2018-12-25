@@ -269,12 +269,12 @@
               "romaji": "DA",
               "checked": false
             }, {
-              "character": "*",
-              "romaji": "*",
+              "character": "ぢ",
+              "romaji": "DI",
               "checked": false
             }, {
-              "character": "*",
-              "romaji": "TZU",
+              "character": "づ",
+              "romaji": "DU",
               "checked": false
             }, {
               "character": "で",
@@ -745,8 +745,8 @@
             "romaji": "ZA",
             "checked": false
           }, {
-            "character": "*",
-            "romaji": "",
+            "character": "ジ",
+            "romaji": "ZI",
             "checked": false
           }, {
             "character": "ズ",
@@ -768,11 +768,11 @@
             "romaji": "DA",
             "checked": false
           }, {
-            "character": "・",
+            "character": "ヂ",
             "romaji": "DI",
             "checked": false
           }, {
-            "character": "・",
+            "character": "ヅ",
             "romaji": "DU",
             "checked": false
           }, {
