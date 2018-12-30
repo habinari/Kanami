@@ -1,4 +1,5 @@
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const path = require('path');
 
 module.exports = {
   module: {
@@ -24,6 +25,11 @@ module.exports = {
         ]
       }
     ]
+  },
+  entry: "./src/renderer/index.js",
+  output: {
+    filename: "kanami.js",
+    path: path.resolve(__dirname, "dist")
   },
   plugins: [
     new VueLoaderPlugin()
