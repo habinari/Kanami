@@ -43,7 +43,7 @@
                             </p>
                             <a href="#" @click="toggleSettings" class="card-header-icon" aria-label="more options">
                                 <span class="icon">
-                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    <font-awesome-icon icon="angle-down" />
                                 </span>
                             </a>
                         </header>
@@ -90,15 +90,21 @@
                     </div>
                 </div>
             </div>
-</div>
-
+        </div>
     </div>
 </template>
 
 <script>
 
 import syll from '../../static/syllabaries.json';
-import Score from './components/Score.vue'
+import Score from './components/Score.vue';
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faCoffee);
+library.add(faAngleDown);
 
 export default {
     data: function() {
@@ -133,7 +139,8 @@ export default {
     },
 
     components: {
-        'Score': Score
+        'Score': Score,
+        'font-awesome-icon': FontAwesomeIcon
     },
 
     created: function() {
@@ -254,8 +261,11 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss" scoped>
     @import "~bulma/css/bulma.css";
-    @import "~@fortawesome/fontawesome-free/css/all.css";
     @import "./styles/margin.scss";
+
+    //$fa-font-path: "~@fortawesome/fontawesome-free/scss/webfonts";
+    //@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+
 </style>
