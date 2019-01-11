@@ -10,7 +10,7 @@
                         </p>
                         <a href="#" @click="toggleScore" class="card-header-icon" aria-label="more options">
                             <span class="icon">
-                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                <font-awesome-icon icon="angle-down" />
                             </span>
                         </a>
                     </header>
@@ -60,6 +60,12 @@
 
 <script>
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faCoffee, faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
+library.add(faCoffee);
+library.add(faAngleDown);
 
 export default {
 
@@ -108,6 +114,10 @@ export default {
         
         return num;
       }
+    },
+
+    components: {
+        'font-awesome-icon': FontAwesomeIcon
     }
 }
 
