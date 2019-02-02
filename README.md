@@ -17,7 +17,7 @@ Minimalist desktop and web app to practice Japanese syllabaries, Hiragana and Ka
 
 ## Getting Started
 
-* Install and run or navigate to [KanamiWeb](http://www.kabi404.me/kanami/).
+* Install and run or navigate to [KanamiWeb](http://www.kabi404.me/kanami/web.html).
 * Choose syllables to practice opening **"Settings"** panel.
     * Add or remove an entire row pressing "+" or "-" button.
     * Use checkboxes to add or remove syllables.
