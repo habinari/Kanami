@@ -4,16 +4,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/kabi404/kanami/badge?style=flat-square)](https://www.codefactor.io/repository/github/kabi404/kanami)
 ![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Windows&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Apple&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Linux&logoColor=white)
-
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Mozilla-Firefox&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Google-Chrome&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Safari&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Opera&logoColor=white)
-![](https://img.shields.io/badge/build-passing-green.svg?style=flat-square&logo=Microsoft-Edge&logoColor=white)
-
 Minimalist desktop and web app to practice Japanese syllabaries, Hiragana and Katakana. Made with Electron, Vue and Webpack.
 
 ## Getting Started
