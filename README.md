@@ -1,5 +1,5 @@
 # Kanami
-[![](https://img.shields.io/github/license/habinari/kanami.svg?style=flat-square)](https://github.com/kabi404/kanami/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/habinari/kanami.svg?style=flat-square)](https://github.com/habinari/kanami/blob/master/LICENSE)
 ![](https://img.shields.io/badge/version-1.1-blue.svg?style=flat-square)
 ![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
