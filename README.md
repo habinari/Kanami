@@ -1,5 +1,5 @@
 # Kanami
-[![](https://img.shields.io/github/license/habinari/kanami.svg?style=flat-square)](https://github.com/habinari/kanami/blob/master/LICENSE)
+[![](https://img.shields.io/github/license/parada3desu/kanami.svg?style=flat-square)](https://github.com/parada3desu/kanami/blob/master/LICENSE)
 ![](https://img.shields.io/badge/version-1.1-blue.svg?style=flat-square)
 ![](https://img.shields.io/badge/PRs-welcome-green.svg?style=flat-square)
 
@@ -22,7 +22,7 @@ MacOS, Windows or Linux based Operating System.
 
 ### Installing
 
-Download common installers or portable version for Windows and MacOS at [releases](https://github.com/habinari/kanami/releases).
+Download common installers or portable version for Windows and MacOS at [releases](https://github.com/parada3desu/kanami/releases).
 
 ## Commands
 
@@ -53,15 +53,15 @@ webpack --config webpack.config.js
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/habinari/kanami/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/parada3desu/kanami/tags).
 
 ## Authors
 
-* **Javier Parada** - *All* - [habinari](https://github.com/habinari)
+* **Javier Parada** - *All* - [parada3desu](https://github.com/parada3desu)
 
-See also the list of [contributors](https://github.com/habinari/kanami/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/parada3desu/kanami/graphs/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the **MIT** - see the  [LICENSE](https://github.com/habinari/kanami/blob/master/LICENSE) file for details.
+This project is licensed under the **MIT** - see the  [LICENSE](https://github.com/parada3desu/kanami/blob/master/LICENSE) file for details.
 
